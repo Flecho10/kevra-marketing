@@ -123,7 +123,8 @@
       top: 0;
       z-index: 100;
       width: 100%;
-      transition: background 0.25s ease, box-shadow 0.25s ease, backdrop-filter 0.25s ease;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
     }
     header.nav .nav-inner {
       display: flex;
@@ -131,36 +132,31 @@
       justify-content: space-between;
       height: 72px;
     }
-    header.nav.scrolled {
-      background: rgba(15, 17, 23, 0.72);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
-    }
     .logo {
       font-weight: 800;
       font-size: 24px;
       letter-spacing: 0.04em;
-      color: #fff;
+      color: var(--text);
     }
     .nav-links { display: flex; align-items: center; gap: 28px; }
     .nav-links a.nav-link {
-      color: rgba(255, 255, 255, 0.82);
+      color: var(--text-muted);
       font-weight: 500;
       font-size: 15px;
       transition: color 0.18s ease;
     }
-    .nav-links a.nav-link:hover { color: #fff; }
+    .nav-links a.nav-link:hover { color: var(--text); }
     .signin-btn {
       color: #fff;
       font-weight: 600;
       font-size: 15px;
       padding: 9px 18px;
-      border: 1px solid rgba(255,255,255,0.22);
+      background: var(--blue);
+      border: 1px solid var(--blue);
       border-radius: 10px;
       transition: background 0.18s ease;
     }
-    .signin-btn:hover { background: rgba(255,255,255,0.1); }
+    .signin-btn:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
 
     .hamburger {
       display: none;
@@ -174,7 +170,7 @@
     .hamburger span {
       width: 24px;
       height: 2px;
-      background: #fff;
+      background: var(--text);
       border-radius: 2px;
       transition: transform 0.25s ease, opacity 0.25s ease;
     }
@@ -502,16 +498,14 @@
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        background: rgba(15,17,23,0.97);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
+        background: #ffffff;
         padding: 12px 24px 24px;
         transform: translateY(-150%);
         transition: transform 0.3s ease;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
+        border-bottom: 1px solid #e5e7eb;
       }
       .nav-links.open { transform: translateY(0); }
-      .nav-links a.nav-link { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links a.nav-link { padding: 14px 0; border-bottom: 1px solid #e5e7eb; }
       .nav-links .signin-btn { text-align: center; margin-top: 12px; }
       .hamburger { display: flex; }
       .hero-content { padding: 90px 0 96px; }
@@ -769,15 +763,6 @@
   </footer>
 
   <script>
-    // Sticky nav background on scroll
-    const nav = document.getElementById('nav');
-    const onScroll = () => {
-      if (window.scrollY > 20) nav.classList.add('scrolled');
-      else nav.classList.remove('scrolled');
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
     // Mobile nav toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
