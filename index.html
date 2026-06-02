@@ -520,7 +520,18 @@
   <!-- ===== Header / Nav ===== -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo"><img src="KEVRA WEB Logo.svg" alt="KEVRA" style="height: 44px; width: auto;"></a>
+      <a href="#" class="logo-link" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="kg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00BFFF"/>
+              <stop offset="100%" stop-color="#C03BDF"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 4 L6 28 L14 28 L14 19 L22 28 L30 28 L19 16 L29 4 L21 4 L14 13 L14 4 Z" fill="url(#kg)"/>
+        </svg>
+        <span style="font-size:1.4rem; font-weight:800; color:#0A0A0A; letter-spacing:-0.02em;">KEVRA</span>
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="#how" class="nav-link">How It Works</a>
         <a href="#features" class="nav-link">Features</a>
