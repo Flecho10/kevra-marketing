@@ -40,5 +40,6 @@ Single `index.html` file + `vercel.json`. No framework, no build step, no node_m
 ## To Do / Placeholders
 - [ ] Add real OG image for social sharing (og:image currently placeholder)
 - [x] Jose's photo already added (jose.png)
-- [ ] Privacy Policy page (/privacy-policy)
-- [ ] Terms page (/terms)
+- [ ] Privacy Policy page on trykevra.com (optional — footer links to app.trykevra.com)
+- [ ] Terms page on trykevra.com (optional — footer links to app.trykevra.com)
+- [x] Footer Privacy/Terms link to `https://app.trykevra.com/privacy-policy` and `/terms` (June 2026)
