@@ -1,3 +1,9 @@
 {
+  "redirects": [
+    { "source": "/privacy", "destination": "https://app.trykevra.com/privacy-policy", "permanent": false },
+    { "source": "/privacy-policy", "destination": "https://app.trykevra.com/privacy-policy", "permanent": false },
+    { "source": "/terms", "destination": "https://app.trykevra.com/terms", "permanent": false },
+    { "source": "/terms-of-service", "destination": "https://app.trykevra.com/terms", "permanent": false }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
