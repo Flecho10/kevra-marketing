@@ -20,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/k-icon.png" />
+  <link rel="apple-touch-icon" href="/k-icon.png" />
 
   <style>
     :root {
@@ -150,6 +152,9 @@
       height: 76px;
     }
     .logo-link { display: flex; align-items: center; }
+    .logo-img { height: 40px; width: auto; display: block; }
+    .logo-img--footer { height: 34px; margin-bottom: 12px; }
+    @media (max-width: 640px) { .logo-img { height: 32px; } }
     .nav-links { display: flex; align-items: center; gap: 30px; }
     .nav-links a.nav-link {
       color: var(--text-muted);
@@ -526,7 +531,6 @@
       gap: 30px;
       align-items: center;
     }
-    .footer-brand img { height: 40px; width: auto; margin-bottom: 12px; }
     .footer-brand p { font-size: 14.5px; color: var(--text-dim); }
     .footer-links { display: flex; gap: 24px; font-size: 15px; font-weight: 500; }
     .footer-links a:hover { color: #fff; }
@@ -588,7 +592,9 @@
   <!-- ===== Header / Nav ===== -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="#" class="logo-link"><img src="KEVRA Logo.png" alt="KEVRA" style="height: 44px; width: auto;"></a>
+      <a href="#" class="logo-link">
+        <img src="/kevra-wordmark.png" alt="KEVRA — AI Contractor" class="logo-img">
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="#how" class="nav-link">How It Works</a>
         <a href="#features" class="nav-link">Features</a>
@@ -829,7 +835,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="KEVRA Logo.png" alt="KEVRA">
+          <img src="/kevra-wordmark.png" alt="KEVRA — AI Contractor" class="logo-img logo-img--footer">
           <p>The AI-powered OS for contractors</p>
         </div>
         <div class="footer-links">
